@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfdbfe;
+    margin: 0;
+}
+
+body {
+    background-color: #bfdbfe;
+    line-height: initial;
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(4, auto-fill);
+}
+
+#header {
+    background-color: #eff6ff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column: 2 / 4;
+    border-bottom: 1px solid #1d4ed8;
+    box-shadow: 2px 2px 1px;
+    padding: 10px;
+
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 1 / 2;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    grid-row: 2 / 3;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.button {
+    background-color: #60a5fa;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#sidebar {
+    background-color: #2563eb;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    gap: 10px;
+    padding: 20px;
+    align-items: stretch;
+
+}
+
+#main {
+    background-color: #bfdbfe;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+#main h2 {
+    grid-column: 1 / 3;
+}
+
+.card {
+    background-color: #eff6ff;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px;
+    padding: 10px;
+    border-left: 5px solid #1e3a8a;
+    display: grid;
+}
+
+.card .icons {
+    display: grid;
+    justify-items: end;
+}
+
+#announcements {
+    background-color: #bfdbfe;
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    gap: 10px;
+    padding: 20px;
+}
+
+#announcements h2 {
+    grid-column: 1 / 2;
+}
+
+#trending {
+    background-color: #bfdbfe;
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    gap: 10px;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#topnav {
+    display: grid;
+    grid-row: 2 / 3;
+}
+
+#topnav ul {
+    display: grid;
+    list-style: none;
+}
+
+#bottomnav {
+    display: grid;
+    grid-row: 3 / 4;
+}
+
+#bottomnav ul {
+    display: grid;
+    list-style: none;
+
+}
+
+.little-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.sidecard {
+    background-color: #eff6ff;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+
+hr {
+    width: 100%;
+    text-align: center;
+    margin-left: 0
+}
+
+#profilepic {
+    display: grid;
+    justify-content: end;
+
+}
+
+#profilename {
+    display: grid;
+    justify-content: center;
+
+}
+
+#bell {
+    display: grid;
+    justify-content: end;
+
+}
+
+#profilepic img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+#largeprofilepic {
+    display: grid;
+    justify-content: center;
+
+}
+
+#largeprofilename {
+    display: grid;
+    justify-content: center;
+
+}
+
+#largeprofilepic img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#profileinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#top-right {
+    display: grid;
+    grid-template-columns: 3rem 3rem 7rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+input {
+    border-radius: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+#searchbar form {
+    display: grid;
+    grid-template-columns: 3rem 20rem;
+    align-items: center;
+    justify-items: end;
+    gap: 10px;
+}
+
+#searchbar form label {
+    display: grid;
+
+}
+
+#searchbar form input {
+    display: grid;
+    background-color: #99f6e4;
+}
+
